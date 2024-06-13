@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music</title>
+</head>
+<body>
+<h1><a href="{% url 'index' %}"><-Назад </a></h1>
+<h1>{{ news.title }}</h1>
+<h4>{{ news.created_date }}</h4>
+<p>{{ news.description }}</p>
+<audio controls>
+  <source src="{{ news.audio.url }}" type="audio/ogg">
+</audio>
+</body>
+</html>
