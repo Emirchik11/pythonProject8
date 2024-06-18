@@ -6,5 +6,6 @@ class News(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     audio = models.FileField(upload_to='media/new_audio')
 
+
     def __str__(self):
         return self.title
